@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myFirstApp">
+<html lang="en" ng-app="NameCalculator">
 <head>
 	<meta charset="UTF-8">
 	<script src="angular.min.js"></script>
 	<script src="app.js"></script>
-	<title>Document</title>
+	<title>Calculator</title>
 </head>
 <body>
   	<h1>Test</h1>
-	<div ng-controller="MyFirstController">
-		{{name}};
+	<div ng-controller="NameCalculatorController">
+		<div>
+			<input type="text" ng-model="name" ng-keyup="displayNumetic();">
+		</div>
+		<div>
+			{{totalValue}}
+		</div>
+		
 	
 	</div>
 </body>
