@@ -3,8 +3,8 @@
 angular.module('myFirstApp', []);
 
 .controller('MyFirstController', function ($scope) {
-	$scope.name = 'Bryant'
-})
+	$scope.name = 'Bryant';
+});
 
 
 	
